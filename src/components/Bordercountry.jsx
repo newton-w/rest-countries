@@ -2,20 +2,37 @@ import React, { useEffect, useState } from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 import { Link, useLocation } from 'react-router-dom'
 
-const Results = () => {
+const Bordercountry = () => {
   const [data, setData] = useState();
   const [borderNames, setBorderNames] = useState([]);
   const location = useLocation()
 
   useEffect(() => {
-    setData(location.state)
+    fetch(`https://restcountries.com/v3.1/name/${location.state}`)
+      .then(response => {
+        if (response.ok) {
+          return (
+            response.json()
+          )
+        } else {
+          throw new Error(response.statusText)
+        }
+      })
+      .then((data) => {
+        setData(data[0])
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    
 
   }, [])
 
+
   // Converting the borders acronames i.e KEN to Kenya, ETH to Ethopia etc.
   useEffect(() => {
-    if (location.state.borders && location.state.borders.length > 0) {
-      const promises = location.state.borders.map((bor) =>
+    if ( data && data.borders) {
+      const promises = data.borders.map((bor) =>
         fetch(`https://restcountries.com/v3.1/alpha/${bor}`)
           .then((response) => response.json())
           .then((data) => data[0].name.common)
@@ -25,9 +42,22 @@ const Results = () => {
     } else {
       setBorderNames([]);
     }
-    
-  }, [location.state.borders]);
 
+  }, [location.state, data]);
+
+  // const HandleBorders = () => {
+  //  if ( data && data.borders) {
+  //     const promises = data.borders.map((bor) =>
+  //       fetch(`https://restcountries.com/v3.1/alpha/${bor}`)
+  //         .then((response) => response.json())
+  //         .then((data) => data[0].name.common)
+  //     );
+
+  //     Promise.all(promises).then((names) => setBorderNames(names));
+  //   } else {
+  //     setBorderNames([]);
+  //   }
+  // }
 
   return (
     <div className='container mx-auto mt-10'>
@@ -71,14 +101,14 @@ const Results = () => {
                       {
                         borderNames && Array.isArray(borderNames) && borderNames.length > 0 ? (borderNames.map((bord, id) => {
                           return (
-                            <Link to= "/results/bordercountry" state={bord} >
-                            <div className='cursor-pointer flex items-center justify-center w-24 h-7 shadow-lg px-5 py-5 rounded cursor-pointer mb-16 ' key={id}>
+                            // <Link to= "/Bordercountry" state={data} >
+                            <div className='flex items-center justify-center w-24 h-7 shadow-lg px-5 py-5 rounded mb-2 md:mb-2' key={id}>
                               {bord}
                             </div>
-                            </Link>
+                            // </Link>
                           )
                         })) : (<div className='flex items-center justify-center w-26 h-7 shadow-lg px-5 py-5 rounded cursor-pointer mb-16'>
-                          No borders
+                          No Borders
                         </div>)
 
                       }
@@ -94,4 +124,4 @@ const Results = () => {
   )
 }
 
-export default Results 
+export default Bordercountry 
