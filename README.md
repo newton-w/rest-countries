@@ -16,8 +16,8 @@
 
 ### Screenshot
 
-![](./screenshot.png)
-![](./screenshot2.png)
+![](./darkmode.png)
+![](./lightmode.png)
 
 ### Links
 
@@ -30,8 +30,9 @@ live site url: [Rest Countries](https://newt-rest-countries.netlify.app/)
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 - [TailwindCss](https://tailwindcss.com/) 
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev) for faster biuld
 
 ## Author
 
@@ -40,4 +41,4 @@ live site url: [Rest Countries](https://newt-rest-countries.netlify.app/)
 
 # Run the Project
     npm install
-    npm start
+    npm run dev

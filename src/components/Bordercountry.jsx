@@ -69,7 +69,7 @@ const Bordercountry = () => {
           </div></Link>
           {
             data &&
-            <div className='text-LVeryDarkBlue dark:text-white bg-VeryLightGray dark:bg-DVeryDarkBlue flex flex-col items-start md:justify-between lg:gap-32 lg:flex-row lg:justify-between'>
+            <div className='text-LVeryDarkBlue dark:text-white bg-VeryLightGray dark:bg-DVeryDarkBlue flex flex-col items-center md:justify-between lg:gap-32 lg:flex-row lg:justify-between'>
               <div className=' w-80 h-60 lg:w-[35rem] lg:h-[25rem]'>
                 <img src={data.flags.png} alt={data.flags.alt} className=' object-cover w-full h-full' />
               </div>
@@ -96,7 +96,7 @@ const Bordercountry = () => {
                   </div>
                   <div>
                     <h1 className=' font-Nunito font-bold text-lg pb-6'>Border Countries:</h1>
-                    <div className='grid grid-cols-3 mb-16 font-Nunito gap-2 lg:justify-between  md:grid-cols-4'>
+                    <div className='grid grid-cols-3 mb-2 font-Nunito gap-2 lg:justify-between  md:grid-cols-4'>
 
                       {
                         borderNames && Array.isArray(borderNames) && borderNames.length > 0 ? (borderNames.map((bord, id) => {

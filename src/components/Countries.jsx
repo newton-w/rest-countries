@@ -6,9 +6,10 @@ const Countries = () => {
     const [input, setInput] = useState(null)
     const [data, setData] = useState()
 
+    
 
     return (
-        <>
+        <main>
             <Input input={input} setInput={setInput} data={data} setData={setData} />
             <div className='flex flex-col justify-center items-center'>
                 <div className='container mx-auto flex flex-col items-center'>
@@ -38,7 +39,7 @@ const Countries = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     )
 }
 

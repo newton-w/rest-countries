@@ -67,7 +67,7 @@ const Input = ({ input, setInput, data, setData }) => {
 
     useEffect(() => {
         AllCountries()
-       data && console.log(data)
+
     }, [])
     useEffect(() => {
         Filter()
@@ -130,14 +130,14 @@ const Input = ({ input, setInput, data, setData }) => {
 
     return (
         <>
-            <div className='container mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between lg:w-full'>
+            <div className='container mx-auto flex flex-col items-center md:items-start lg:flex-row lg:items-center lg:justify-between lg:w-full'>
                 <div className=' flex justify-center  pt-[1.875rem] pb-[3.125rem] rounded md:justify-start'>
                     <div className='flex items-center justify-center gap-8 h-[3.75rem] w-[26.563rem] shadow-lg  '>
                         <AiOutlineSearch className=' cursor-pointer text-LVeryDarkBlue dark:text-white' />
                         <input type="search" placeholder='search for a country..' className='text-LVeryDarkBlue dark:text-white bg-VeryLightGray dark:bg-DVeryDarkBlue py-3 focus:outline-none font-Nunito' onChange={inputHandler} />
                     </div>
                 </div>
-                <div className='container  gap-1 flex flex-col sm:items-center '>
+                <div className='gap-1 flex flex-col  '>
                     <div className='text-LVeryDarkBlue dark:text-white flex items-center justify-between  w-[15.625rem] h-[3.75rem] shadow-lg px-5 rounded cursor-pointer' onClick={HandleClick}>
                         <input type="button" value={choice} />
                         <AiOutlineDown />

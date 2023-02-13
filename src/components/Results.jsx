@@ -29,6 +29,7 @@ const Results = () => {
   }, [location.state.borders]);
 
 
+
   return (
     <div className='container mx-auto mt-10'>
       <div className='container mx-auto flex flex-col items-center w-screen'>
@@ -66,7 +67,7 @@ const Results = () => {
                   </div>
                   <div>
                     <h1 className=' font-Nunito font-bold text-lg pb-6'>Border Countries:</h1>
-                    <div className='grid grid-cols-3 mb-16 font-Nunito gap-2 lg:justify-between  md:grid-cols-4'>
+                    <div className='grid grid-cols-3 mb-2 font-Nunito gap-2 lg:justify-between  md:grid-cols-4'>
 
                       {
                         borderNames && Array.isArray(borderNames) && borderNames.length > 0 ? (borderNames.map((bord, id) => {
