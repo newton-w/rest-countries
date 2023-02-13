@@ -71,7 +71,7 @@ const Bordercountry = () => {
             data &&
             <div className='text-LVeryDarkBlue dark:text-white bg-VeryLightGray dark:bg-DVeryDarkBlue flex flex-col items-center md:justify-between lg:gap-32 lg:flex-row lg:justify-between'>
               <div className=' w-80 h-60 lg:w-[35rem] lg:h-[25rem]'>
-                <img src={data.flags.png} alt={data.flags.alt} className=' object-cover w-full h-full' />
+                <img src={data.flags.png} alt="" className=' object-cover w-full h-full' />
               </div>
               <div className='flex flex-col items-start'>
                 <div>

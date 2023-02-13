@@ -21,7 +21,7 @@ const Countries = () => {
                                     <Link to= "/results" state={item} >
                                         <div className=' bg-VeryLightGray dark:bg-DVeryDarkBlue text-LVeryDarkBlue dark:text-white rounded-lg w-[20.375rem] h-[26.063rem]  shadow-lg lg:h-auto lg:w-[16.5rem] lg:pb-3 cursor-pointer' key={item.cca3}>
                                             <div>
-                                                <img src={item.flags.png} alt={item.flags.alt} className=' w-full h-[12.5rem] object-cover lg:[9.875rem]' loading='lazy' />
+                                                <img src={item.flags.png} alt="" className=' w-full h-[12.5rem] object-cover lg:[9.875rem]' loading='lazy' />
                                             </div>
                                             <div className=' px-8'>
                                                 <h1 className=' py-9 font-Nunito font-bold text-lg lg:py-[2.063rem]'>{item.name.common}</h1>
