@@ -34,8 +34,8 @@ const Nav = () => {
 
   return (
     <nav className=' mx-auto w-screen flex items-center justify-between h-[6.25rem] px-5 drop-shadow-md bg-VeryLightGray dark:bg-DVeryDarkBlue lg:container'>
-      <div>
-        <h1 className='font-Nunito font-extrabold text-LVeryDarkBlue dark:text-white'>Where in the world??</h1>
+      <div className='font-Nunito font-extrabold text-LVeryDarkBlue dark:text-white'>
+       Where in the world??
       </div>
       <div>
         <div className='flex font-Nunito font-semibold items-center gap-3 text-LVeryDarkBlue dark:text-white cursor-pointer' onClick={Darkk}>{theme === 'dark' ? < BsSun /> : <BsMoonStars />}{mode}</div>
