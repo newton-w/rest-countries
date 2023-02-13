@@ -21,7 +21,7 @@
 
 ### Links
 
-live site url: [Rest Countries](https://newt-rest-countries.netlify.app/){:target="_blank"}
+live site url: [Rest Countries](https://newt-rest-countries.netlify.app/)
 
 ### Biult with
 
@@ -30,14 +30,14 @@ live site url: [Rest Countries](https://newt-rest-countries.netlify.app/){:targe
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [TailwindCss](https://tailwindcss.com/){:target="_blank"} 
-- [React](https://reactjs.org/){:target="_blank"} - JS library
-- [Vite](https://vitejs.dev){:target="_blank"} for faster biuld
+- <a href="https://tailwindcss.com/" target="_blank">TailwindCss</a>
+- <a href="https://reactjs.org/" target="_blank">React</a> - JS library
+- <a href="https://vitejs.dev" target="_blank">Vite</a> for faster build
 
 ## Author
 
-- Frontend Mentor - [@newton-w](https://www.frontendmentor.io/profile/newton-w){:target="_blank"}
-- LinkedIn - [@newton](https://www.linkedin.com/in/newton-warui-326917223/){:target="_blank"}
+- Frontend Mentor - [@newton-w](https://www.frontendmentor.io/profile/newton-w)
+- LinkedIn - [@newton](https://www.linkedin.com/in/newton-warui-326917223/)
 
 # Run the Project
     npm install
