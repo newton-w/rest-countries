@@ -30,9 +30,9 @@ live site url: [Rest Countries](https://newt-rest-countries.netlify.app/)
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- <a href="https://tailwindcss.com/" target="_blank">TailwindCss</a>
-- <a href="https://reactjs.org/" target="_blank">React</a> - JS library
-- <a href="https://vitejs.dev" target="_blank">Vite</a> for faster build
+- [TailwindCss](https://tailwindcss.com/) 
+- [React](https://reactjs.org/) - JS library
+- [Vite](https://vitejs.dev) for faster biuld
 
 ## Author
 
