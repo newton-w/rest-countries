@@ -37,7 +37,7 @@ live site url: [Rest Countries](https://newt-rest-countries.netlify.app/)
 ## Author
 
 - Frontend Mentor - [@newton-w](https://www.frontendmentor.io/profile/newton-w)
-- LinkedIn - [@newton](https://www.linkedin.com/in/newton-warui-326917223/)
+- LinkedIn - [@newton](https://www.linkedin.com/in/newton-warui/)
 
 # Run the Project
     npm install
