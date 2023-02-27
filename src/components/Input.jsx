@@ -71,7 +71,7 @@ const Input = ({ input, setInput, data, setData }) => {
     }, [])
     useEffect(() => {
         Filter()
-    }, [region])
+    }, [choice])
     useEffect(() => {
         HandleInput()
     }, [input])

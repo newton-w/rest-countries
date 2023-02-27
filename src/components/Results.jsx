@@ -73,7 +73,7 @@ const Results = () => {
                         borderNames && Array.isArray(borderNames) && borderNames.length > 0 ? (borderNames.map((bord, id) => {
                           return (
                             <Link to= "/results/bordercountry" state={bord} >
-                            <div className='cursor-pointer flex items-center justify-center w-24 h-7 shadow-lg px-5 py-5 rounded cursor-pointer mb-16 ' key={id}>
+                            <div className=' flex items-center justify-center w-24 h-7 shadow-lg px-5 py-5 rounded cursor-pointer mb-16 ' key={id}>
                               {bord}
                             </div>
                             </Link>
